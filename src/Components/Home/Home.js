@@ -6,6 +6,7 @@ import img3 from '../../Images/homeImg3.jpg';
 import About from '../About/About';
 import TrainingProgram from '../TrainingPrograms/TrainingProgram';
 import WhyChooseUs from '../WhyChooseUs/WhyChooseUs';
+import HomeBeforeAbout from '../HomeBeforeAbout/HomeBeforeAbout';
 
 
 const Home = () => {
@@ -23,20 +24,7 @@ const Home = () => {
                     </div>
                 </div>
             </div>
-            <div className="container">
-               <div className="row align-items-center">
-                   <div className="col-md-4">
-                       <img src={img1} alt=""/>
-                       <h4>abdc</h4>
-                   </div>
-                   <div className="col-md-4">
-                       <img src={img2} alt=""/>
-                   </div>
-                   <div className="col-md-4">
-                       <img src={img3} alt=""/>
-                   </div>
-               </div>
-            </div>
+           <HomeBeforeAbout></HomeBeforeAbout>
             <About></About>
             <TrainingProgram></TrainingProgram>
             <WhyChooseUs></WhyChooseUs>

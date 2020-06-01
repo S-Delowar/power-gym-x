@@ -6,20 +6,20 @@ import img2 from '../../Images/arthur-edelman-qfjuh4OLdxw-unsplash.jpg';
 const TrainingProgram = () => {
     return (
         <div className="container">
-            <div className="text-center">
-                <h1>TRAINING PROGRAM</h1>
+            <div className="text-center heading">
+                <h1><span className="orange-text">TRAINING</span> PROGRAM</h1>
             </div>
-            <div className="row align-item-center">
-                <div className="col-md-6">
-                    <img className="training-img" src={img1} alt=""/>
-                    <div class="card-img-overlay">
-                            <button className="btn btn-warning">YOGA TRAINING SESSION</button>
-                    </div>
+            <div className="card-deck">
+                <div className="card">
+                <img className="card-img-top training-img" src={img1} alt="Card image cap" />
+                <div className="card-body">
+                <button className="btn btn-warning">YOGA TRAINING SESSION →</button>
                 </div>
-                <div className="col-md-6">
-                <img className="training-img" src={img2} alt=""/>
-                <div class="card-img-overlay">
-                            <button className="btn btn-warning">CARDIO TRAINING SESSION</button>
+                </div>
+                <div className="card ">
+                <img className="card-img-top training-img" src={img2} alt="Card image cap" />
+                <div className="card-body">
+                    <button className="btn btn-warning">CARDIO TRAINING SESSION →</button>
                 </div>
                 </div>
             </div>

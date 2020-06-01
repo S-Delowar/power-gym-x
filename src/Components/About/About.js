@@ -10,9 +10,11 @@ const About = () => {
                     <img className="about-img" src={img1} alt=""/>
                 </div>
                 <div className="col-md-6">
-                    <h1>About Us</h1>
-                    <h2>WE ARE HERE TO DREAM</h2>
+                    <h1><span className="gray-text">About Us</span></h1>
+                    <h2><span className="orange-text">WE ARE HERE TO DREAM</span></h2>
                     <h2>OUR TEAM IS HERE TO SERVE YOU</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, earum repellendus explicabo numquam perferendis dolores, minima placeat quas dolorem eligendi voluptatibus nemo perspiciatis quos dolore dolorum quisquam officiis esse excepturi rerum! Minima qui fugit quae sint voluptas veniam eveniet recusandae.</p>
+
                 </div>
             </div>
         </div>

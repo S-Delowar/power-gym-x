@@ -1,5 +1,22 @@
 .training-img {
     width: 100%;
-    height: 70vh;
+    height: auto;
     display: block;
+}
+.yoga {
+    background-image: url('../../Images/bruce-mars-gJtDg6WfMlQ-unsplash.png');
+}
+.cardio {
+    background-image: url('../../Images/arthur-edelman-qfjuh4OLdxw-unsplash.jpg');
+}
+.yoga .cardio {
+    background-size: cover;
+    height: 400px;
+}
+.training-img {
+    width: 100%;
+    height: 80%;
+}
+.heading {
+    margin-bottom: 50px;
 }
