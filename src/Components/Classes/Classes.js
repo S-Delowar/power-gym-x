@@ -11,7 +11,7 @@ const Classes = () => {
         fetch('https://powerx-gym.herokuapp.com/classes')
             .then(res => res.json())
             .then(data => setClasses(data))
-    })
+    },[])
     return (
         <div>
             <div className="top-background-img">

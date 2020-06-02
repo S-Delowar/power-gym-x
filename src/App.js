@@ -16,6 +16,7 @@ import About from './Components/About/About';
 import Blog from './Components/Blog/Blog';
 import Pricing from './Components/Pricing/Pricing';
 import Contact from './Components/Contact/Contact';
+import ClassItemDetails from './Components/ClassItemDetails/ClassItemDetails';
 
 function App() {
   return (
@@ -46,6 +47,9 @@ function App() {
           </Route>
           <Route path="/contact">
             <Contact></Contact>
+          </Route>
+          <Route path="/class/:classId">
+            <ClassItemDetails></ClassItemDetails>
           </Route>
         </Switch>
       </Router>
