@@ -4,7 +4,7 @@ import img1 from '../../Images/wells-chan-H-vAxuWxmi8-unsplash.jpg'
 
 const About = () => {
     return (
-        <div className="container">
+        <div className="container home-container">
             <div className="row align-items-center">
                 <div className="col-md-6">
                     <img className="about-img" src={img1} alt=""/>

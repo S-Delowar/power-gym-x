@@ -7,6 +7,7 @@ import About from '../About/About';
 import TrainingProgram from '../TrainingPrograms/TrainingProgram';
 import WhyChooseUs from '../WhyChooseUs/WhyChooseUs';
 import HomeBeforeAbout from '../HomeBeforeAbout/HomeBeforeAbout';
+import Footer from '../Footer/Footer';
 
 
 const Home = () => {
@@ -28,9 +29,7 @@ const Home = () => {
             <About></About>
             <TrainingProgram></TrainingProgram>
             <WhyChooseUs></WhyChooseUs>
-            <div>
-                hrsnnslnsljcnsjdnscns
-            </div>
+           <Footer></Footer>
 
         </div>
     );

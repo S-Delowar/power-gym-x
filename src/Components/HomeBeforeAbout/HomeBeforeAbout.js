@@ -4,7 +4,7 @@ import img1 from '../../Images/Group 81.png';
 
 const HomeBeforeAbout = () => {
     return (
-        <div className="container">
+        <div className="container home-container">
             <div className="row">
                 <div className="col-md-4 col-sm-6">
                     <div className="card progression">

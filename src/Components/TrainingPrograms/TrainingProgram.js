@@ -5,7 +5,7 @@ import img2 from '../../Images/arthur-edelman-qfjuh4OLdxw-unsplash.jpg';
 
 const TrainingProgram = () => {
     return (
-        <div className="container">
+        <div className="container home-container">
             <div className="text-center heading">
                 <h1><span className="orange-text">TRAINING</span> PROGRAM</h1>
             </div>

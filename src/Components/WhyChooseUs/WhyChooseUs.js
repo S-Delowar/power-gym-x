@@ -6,7 +6,7 @@ import img3 from '../../Images/gift-2.png';
 
 const WhyChooseUs = () => {
     return (
-        <div className="container">
+        <div className="container home-container">
             <div className="text-center heading">
                 <h1><span className="orange-text">WHY</span> CHOOSE US</h1>
             </div>

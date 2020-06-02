@@ -5,7 +5,7 @@ import { Link, NavLink } from 'react-router-dom';
 
 const NavigationBar = () => {
     return (
-        <div className="container text-white navbar-light">
+        <div className="navigationbar container text-white navbar-light">
             <Navbar expand="lg">
                 <NavLink className="navbar-brand text-white" to="/">Power <span className="yellow-text">X</span></NavLink>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
