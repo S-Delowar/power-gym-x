@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
+import './Pricing.scss';
 import PricingItem from '../PricingItem/PricingItem';
+import Footer from '../Footer/Footer';
 
 const Pricing = () => {
     const [allPricing, setAllPricing] = useState(null)
@@ -17,7 +19,7 @@ const Pricing = () => {
                     <h1>PRICING PLANS</h1>
                 </div>
             </div>
-            <div className="container text-center home-container">
+            <div className="container text-center pricing-header">
                 <h2><span className="orange-text">CHOOSE THE OFFER</span> THAT SUITS YOU</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, fugiat nihil unde debitis doloremque maxime!</p>
             </div>
@@ -31,9 +33,7 @@ const Pricing = () => {
                 }
                 </div>
             </div>
-            <div className="container">
-                pricing
-            </div>
+            <Footer></Footer>
         </div>
     );
 };

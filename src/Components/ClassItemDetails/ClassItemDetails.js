@@ -2,16 +2,18 @@ import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router';
 import Axios from 'axios';
 import Footer from '../Footer/Footer';
+import EachClassItemDetails from './EachClassItemDetails';
 
 const ClassItemDetails = () => {
     const {classId} = useParams()
 
     const [currentClass, setCurrentClass] = useState(null)
 
+
     useEffect(() => {
         fetch('https://powerx-gym.herokuapp.com/classes/'+classId)
             .then(res => res.json())
-            .then(data => console.log(data))
+            .then(data => setCurrentClass(data))
     },[])
    
     // if(allClass) {
@@ -29,7 +31,12 @@ const ClassItemDetails = () => {
                 </div>
             </div>
             <h2>{classId}</h2>
+            {
+                currentClass && <EachClassItemDetails currentClass={currentClass}></EachClassItemDetails>
+                
+            }
         </div>
+
     );
 };
 

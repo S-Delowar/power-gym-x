@@ -17,6 +17,7 @@ import Blog from './Components/Blog/Blog';
 import Pricing from './Components/Pricing/Pricing';
 import Contact from './Components/Contact/Contact';
 import ClassItemDetails from './Components/ClassItemDetails/ClassItemDetails';
+import Footer from './Components/Footer/Footer';
 
 function App() {
   return (
@@ -38,6 +39,7 @@ function App() {
           </Route>
           <Route path="/about">
             <About></About>
+            <Footer></Footer>
           </Route>
           <Route path="/blog">
             <Blog></Blog>
