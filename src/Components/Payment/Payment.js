@@ -7,19 +7,39 @@ import PayPalCard from '../../Images/Bitmap.png'
 import { useForm } from 'react-hook-form';
 import Footer from '../Footer/Footer';
 
-const Payment = () => {
+const Payment = (props) => {
     const { register, handleSubmit, watch, errors } = useForm();
-    const onSubmit = data => console.log(data);
+    const onSubmit = data => {
+        console.log('payment', data)
+        console.log('membership', props.membershipInfo);
+        const membershipDetails = { membership: props.membershipInfo, payment: data };
+        console.log(membershipDetails);
+        fetch('https://powerx-gym.herokuapp.com/addUser', {
+            method: 'POST',
+            body: JSON.stringify(membershipDetails),
+            headers: {
+                "Content-type": "application/json; charset=UTF-8"
+            }
+        })
+        .then(res => console.log('Post done'))
+        .catch(err => console.log(err))
+        
+    };
 
     return (
         <div>
-            <div className="top-background-img">
+            {/* <div className="top-background-img">
                 <div className="container classes">
                     <h1>YOUR GYM MEMBERSHIP</h1>
                 </div>
-            </div>
-            <div className="container">
+            </div> */}
+            <div className="container payment-page">
+                <div className="text-center mb-4">
+                    <h4 className="orange-text">STEP-2</h4>
+                    <hr />
+                </div>
                 <div className="credit-card-section">
+
                     <div className="row">
                         <div className="col-md-8">
                             <h4>Credit Card</h4>
@@ -83,7 +103,6 @@ const Payment = () => {
                     </div>
                 </div>
             </div>
-            <Footer></Footer>
         </div >
     );
 };
