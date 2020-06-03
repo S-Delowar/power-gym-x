@@ -6,8 +6,8 @@ import img3 from '../../Images/homeImg3.jpg';
 import About from '../About/About';
 import TrainingProgram from '../TrainingPrograms/TrainingProgram';
 import WhyChooseUs from '../WhyChooseUs/WhyChooseUs';
-import HomeBeforeAbout from '../HomeBeforeAbout/HomeBeforeAbout';
 import Footer from '../Footer/Footer';
+import Blog from '../Blog/Blog';
 
 
 const Home = () => {
@@ -25,7 +25,7 @@ const Home = () => {
                     </div>
                 </div>
             </div>
-           <HomeBeforeAbout></HomeBeforeAbout>
+           <Blog></Blog>
             <About></About>
             <TrainingProgram></TrainingProgram>
             <WhyChooseUs></WhyChooseUs>

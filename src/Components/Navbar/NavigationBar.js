@@ -7,7 +7,7 @@ const NavigationBar = () => {
     return (
         <div className="navigationbar container text-white navbar-light">
             <Navbar expand="lg">
-                <NavLink className="navbar-brand text-white" to="/">Power <span className="yellow-text">X</span></NavLink>
+                <NavLink className="navbar-brand text-white" to="/"><span className="tomato-text">POWER</span> <span className="yellow-text">X</span></NavLink>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav justify-content-end">
                     <Nav className="mr-auto">

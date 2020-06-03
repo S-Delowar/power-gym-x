@@ -13,13 +13,14 @@ import Home from './Components/Home/Home';
 import Services from './Components/Services/Services';
 import Classes from './Components/Classes/Classes';
 import About from './Components/About/About';
-import Blog from './Components/Blog/Blog';
 import Pricing from './Components/Pricing/Pricing';
 import Contact from './Components/Contact/Contact';
 import ClassItemDetails from './Components/ClassItemDetails/ClassItemDetails';
 import Footer from './Components/Footer/Footer';
 import MemberShip from './Components/Membership/MemberShip';
 import Payment from './Components/Payment/Payment';
+import AboutUs from './Components/AboutUS/AboutUs';
+import BlogPage from './Components/Blog/BlogPage';
 
 function App() {
   return (
@@ -40,11 +41,11 @@ function App() {
             <Classes></Classes>
           </Route>
           <Route path="/about">
-            <About></About>
+            <AboutUs></AboutUs>
             <Footer></Footer>
           </Route>
           <Route path="/blog">
-            <Blog></Blog>
+            <BlogPage></BlogPage>
           </Route>
           <Route path="/pricing">
             <Pricing></Pricing>

@@ -1,0 +1,28 @@
+.contact-page {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.contactForm input, textarea {
+    display: block;
+    width: 100%;
+    height: 40px;
+    margin-top: 40px;
+    padding-left: 20px;
+    border-radius: 5px; 
+    border: 1px solid lightgray;
+
+}
+.message-button {
+    background-color: #5cb85c;
+}
+.error {
+    color: red;
+}
+.green-yellow-text {
+    color: greenyellow;
+}
+
+
+.contactForm textarea {
+    height: 150px;
+}

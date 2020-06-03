@@ -1,20 +1,19 @@
 import React from 'react';
+import Blog from './Blog';
 import Footer from '../Footer/Footer';
-import TrainingProgram from '../TrainingPrograms/TrainingProgram';
 
-const Services = () => {
+const BlogPage = () => {
     return (
         <div>
             <div className="top-background-img">
                 <div className="container classes">
-                    <h1>SERVICES WE PROVIDE</h1>
+                    <h1>BLOGS</h1>
                 </div>
             </div>
-            <TrainingProgram></TrainingProgram>
-
+            <Blog></Blog>
             <Footer></Footer>
         </div>
     );
 };
 
-export default Services;
+export default BlogPage;
