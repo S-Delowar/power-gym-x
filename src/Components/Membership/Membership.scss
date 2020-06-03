@@ -1,0 +1,17 @@
+.membership-form input, select {
+    width: 100%;
+    display: block;
+    height: 40px;
+    padding: 5px;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+}
+.error {
+    color: red;
+}
+.membership-form .row {
+ margin-top: 20px;
+}
+.membership-form {
+    margin-top: 100px;
+}

@@ -18,6 +18,8 @@ import Pricing from './Components/Pricing/Pricing';
 import Contact from './Components/Contact/Contact';
 import ClassItemDetails from './Components/ClassItemDetails/ClassItemDetails';
 import Footer from './Components/Footer/Footer';
+import MemberShip from './Components/Membership/MemberShip';
+import Payment from './Components/Payment/Payment';
 
 function App() {
   return (
@@ -52,6 +54,13 @@ function App() {
           </Route>
           <Route path="/class/:classId">
             <ClassItemDetails></ClassItemDetails>
+          </Route>
+          <Route path="/membership">
+            <MemberShip></MemberShip>
+            <Footer></Footer>
+          </Route>
+          <Route path="/payment">
+            <Payment></Payment>
           </Route>
         </Switch>
       </Router>

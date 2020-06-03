@@ -1,5 +1,6 @@
 import React from 'react';
 import './PricingItem.scss';
+import { Link } from 'react-router-dom';
 
 
 const PricingItem = (props) => {
@@ -13,9 +14,11 @@ const PricingItem = (props) => {
                     <h3 class="card-title ">{title}</h3>
                     <h1 className="yellow-text">{price}</h1>
                     {
-                        features.map((feature,index)=> <p key={feature.index}>✓ {feature}</p> )
+                        features.map((feature, index) => <p key={feature.index}>✓ {feature}</p>)
                     }
-                    <button className="btn btn-warning btn-lg">PURCHASE</button>
+                    <Link to="/membership">
+                        <button className="btn btn-warning btn-lg">PURCHASE</button>
+                    </Link>
                 </div>
             </div>
         </div>
