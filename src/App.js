@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import './App.scss';
@@ -21,8 +21,14 @@ import MemberShip from './Components/Membership/MemberShip';
 import Payment from './Components/Payment/Payment';
 import AboutUs from './Components/AboutUS/AboutUs';
 import BlogPage from './Components/Blog/BlogPage';
+import ReactGa from 'react-ga';
+
 
 function App() {
+  useEffect(()=>{
+    ReactGa.initialize('UA-168434279-1');
+    ReactGa.pageview(window.location.pathname + window.location.search);
+  },[])
   return (
     <div>
       <Router>
