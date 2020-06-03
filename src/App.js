@@ -54,6 +54,7 @@ function App() {
           </Route>
           <Route path="/class/:classId">
             <ClassItemDetails></ClassItemDetails>
+            <Footer></Footer>
           </Route>
           <Route path="/membership">
             <MemberShip></MemberShip>
